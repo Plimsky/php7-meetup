@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  php7:
+    build: ./docker/php7
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8000:80
+  php5.6:
+    build: ./docker/php5
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 9000:80
